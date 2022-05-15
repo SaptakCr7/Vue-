@@ -1,0 +1,21 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learning Vue</title>
+    <script src="https://unpkg.com/vue@3.0.2"></script>
+    <script src="App.js" defer></script>
+  </head>
+  <body>
+    <h1>Hello World :)</h1>
+    <div id="app">
+      <h2>{{title}} - {{author}} - {{Age}}</h2>
+      <!-- Event handler -->
+      <button v-on:click="Age++">Increase Age</button>
+
+      <button v-on:click="Age--">Decrease Age</button>
+      <div @click="changeTitle">Change Book Title</div>
+    </div>
+  </body>
+</html>
